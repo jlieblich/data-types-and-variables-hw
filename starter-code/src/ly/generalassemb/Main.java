@@ -22,18 +22,18 @@ public class Main {
          * Hint 2 - try running the code (right click on this file and select "Run Main.main()" and if you get
          * zero errors then your data types and values all match up
          */
-        ___ varA = 3;
-        ___ varB = 9.75;
-        ___ varC = 4.0;
-        ___ varD = 2.;
-        ___ varE = 8573f;
-        ___ varF = "Macarons are delicious!";
-        ___ varG = '$';
-        ___ varH = "$";
-        ___ varI = true;
-        ___ varJ = (2 == 3);
-        ___ varK = Integer.valueOf("9235");
-        ___ varL = varF.equals("Macarons are delicious!");
+        int varA = 3;
+        double varB = 9.75;
+        double varC = 4.0;
+        double varD = 2.;
+        float varE = 8573f;
+        String varF = "Macarons are delicious!";
+        char varG = '$';
+        String varH = "$";
+        boolean varI = true;
+        boolean varJ = (2 == 3);
+        int varK = Integer.valueOf("9235");
+        boolean varL = varF.equals("Macarons are delicious!");
 
 
         /**
@@ -45,8 +45,8 @@ public class Main {
          * be done in separate lines of code.
          */
 
-        ___ price;
-        price = ___;
+        double price;
+        price = 10.99;
 
 
         /**
@@ -54,7 +54,7 @@ public class Main {
          * give it an initial value of "placeholder comment" all in one line of code.
          */
 
-        ___ comment = ___;
+        String comment = "placeholder comment";
 
 
         /**
@@ -68,7 +68,12 @@ public class Main {
 
         int numerator = 10;
         int divisor = 3;
-        int divisionResult = numerator / divisor;
-        System.out.println(divisionResult);
+        int divisionResult = numerator / divisor; //Divides 10 by 3 and sets it to divisionResult
+        System.out.println(divisionResult); //prints 3 to the console
+        /*
+        Since we are working with two integers, the return type of int/int will also be an integer.
+        Instead of 10/3 being equal to 3.333333... it will return the integer 3
+        If we were to use a float or double, it would return a more precise result
+         */
     }
 }
